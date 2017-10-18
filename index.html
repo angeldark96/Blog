@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Blog</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<!--[if lt IE 9]> <script src="js/html5shiv.js"></script> 
@@ -20,6 +20,10 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/style.css">
 
+		<link href="https://file.myfontastic.com/Qezvwctbzy3tcws7vphGHj/icons.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="js/script.js"></script>
+
     </head>
 <body >
 		 <!-- start preloader -->
@@ -29,68 +33,55 @@
             </div>
         </div>
         <!-- end preloader -->
-       
-		
-		
-<!-- Start Header Section -->
-<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-12">
-				<div class="lft_hd">
-					<a href="index.html"><img src="img/logo.svg" alt=""/></a>
-				</div>
-			</div>			
-			<div class="col-lg-9 col-md-9 col-sm-12">
-				<div class="rgt_hd">					
-					<div class="main_menu">
-						<nav id="nav_menu">
-							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>	
-						<div id="navbar">
-							<ul>
-								<li><a class="page-scroll" href="index.html">Inicio</a></li> 
-							<li><a href="#">Decoracion<i class="fa fa-angle-down"></i></a>
-							<ul>
-								<li><a class="page-scroll" href="#tm_sec">Salas</a></li>
-								<li><a class="page-scroll" href="#tstm_sec">Cocinas</a></li>
-								<li><a class="page-scroll" href="#lts_sec">Jardin</a></li>
-								<li><a class="page-scroll" href="#clt_sec">Dormiorio</a></li>
-							</ul>
-							</li> 						
-
-							<li><a href="#">Novedades<i class="fa fa-angle-down"></i></a>
-							<ul>
-								<li><a class="page-scroll" href="blog.html">Blog Page</a></li>
-								<li><a class="page-scroll" href="single.html">Single Blog Page</a></li>
-							</ul>
-							</li> 
-							
-								<li><a class="page-scroll" href="#abt_sec">Estilo de vida</a></li>
-								<li><a class="page-scroll" href="#pr_sec">Organizacion</a></li>
-								<li><a class="page-scroll" href="#protfolio_sec">Catalogo</a></li>
-								<li><a class="page-scroll" href="#ctn_sec">Contacto</a></li>
-								<li><a class="page-scroll" href="http://www.contihogar.com.pe">Comprar</a></li>
-							</ul>
-						</div>		
-						</nav>			
-					</div>					
-						
-				</div>
-			</div>	
-		</div>	
-	</div>	
-</header>
 <!-- End Header Section -->
 
+
+		 <header class="main-header">
+			 <!--Para alinear los container en toda sus colummnas -->
+			 <div class="l-container">
+				 <a href="#">
+					 <img src="img/logo.png" alt="" class="logo">
+				 </a>
+
+				 <div id="toggle-menu" class="icon-menu"></div>
+				 <nav class="main-nav" id="main-nav">
+
+					 <ul class="main-menu">
+
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Inicio</a>
+						 </li>
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Decoración</a>
+						 </li>
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Novedades</a>
+						 </li>
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Estilo de Vida</a>
+						 </li>
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Organización</a>
+						 </li>
+						 <li class="main-menu__item">
+							 <a href="#" class="main-menu__link">Catálogo</a>
+						 </li>
+						 <li  class="main-menu__item">
+						 <a href="#" class="main-menu__link">Comprar</a>
+					 </li>
+						 <li  class="main-menu__item">
+							 <a href="#" class="main-menu__link">Contacto</a>
+						 </li>
+
+					 </ul>
+				 </nav>
+			 </div>
+		 </header>
 
 <!-- Slides -->
 <section id="slider_sec">
 	<div class="container">
-		<div class="row">
+		<div class="">
 			<div class="slider">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				  <!-- Indicators -->
@@ -149,8 +140,7 @@
 
 <!-- SECTION Acerca de contihogar -->
 <section id="abt_sec">
-	<div class="container">
-		<div class="row">
+		<div class="l-container">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="title_sec">
 					<h1>Acerca de Contihogar</h1>
@@ -159,11 +149,11 @@
 			</div>		
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="abt">
-					<p>Contihogar es la tienda online de muebles más importante de Perú y latinoamerica, en donde encontrarás de todo para que puedas amoblar tu hogar desde la comodidad de tu hogar a tan solo un click, encontrarás desde un cuadro hasta un juego de dormitorio, en nuestro tienda online experimentarás la manera más fácil y segura de hacer tus compras, te olvidarás de las largas colas en tienda, la falta de estacionamiento, el horario limitado de comprar y la indisponibilidad de productos en tienda. En nuestra tienda online te daremos la mejor experiencia de compra nunca antes vivida, soportada por la mejor tecnología innovadora del mercado llevando tu modo ver las compras a otro nivel.</p>
+					<p class="parrafo-alineado">Contihogar es la tienda online de muebles más importante de Perú y latinoamerica, en donde encontrarás de todo para que puedas amoblar tu hogar desde la comodidad de tu hogar a tan solo un click, encontrarás desde un cuadro hasta un juego de dormitorio, en nuestro tienda online experimentarás la manera más fácil y segura de hacer tus compras, te olvidarás de las largas colas en tienda, la falta de estacionamiento, el horario limitado de comprar y la indisponibilidad de productos en tienda. En nuestra tienda online te daremos la mejor experiencia de compra nunca antes vivida, soportada por la mejor tecnología innovadora del mercado llevando tu modo ver las compras a otro nivel.</p>
 				</div>
 			</div>			
 		</div>
-	</div>
+
 </section>
 <!-- SECTION Acerca de contihogar -->
 
@@ -172,7 +162,7 @@
 
 <!-- Service Section -->
 <section id="pr_sec">
-	<div class="container">
+	<div class="l-container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="title_sec">
@@ -180,7 +170,7 @@
 					<h2>calidad, servicio y comodidad</h2>
 				</div>			
 			</div>		
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs12">
 				<div class="service">						
 					<i class="fa fa-phone"></i>
 					<h2>Fonocompras</h2>
@@ -191,7 +181,7 @@
 					</div>
 				</div>
 			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs12">
 				<div class="service">						
 					<i class="fa fa-credit-card"></i>
 					<h2>Todos los medios de pago</h2>
@@ -202,7 +192,7 @@
 					</div>
 				</div>
 			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs12">
 				<div class="service">						
 					<i class="fa fa-bus"></i>
 					<h2>Envio a todo el Perú</h2>
@@ -213,7 +203,7 @@
 					</div>
 				</div>
 			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs12">
 				<div class="service">						
 					<i class="fa fa-smile-o"></i>
 					<h2>Horario de atencion</h2>
@@ -232,7 +222,7 @@
 <!-- start catalogo Section -->
 <section id="protfolio_sec">
 	<div class="container">
-		<div class="row">
+			<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="title_sec">
 					<h1>Catalogo</h1>
@@ -252,82 +242,82 @@
 				</div>
 				 
 				<div class="all-portfolios">
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala1.png" alt="">
 					</div>				
 					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala2.png" alt="">
 					</div>				
 					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala3.png" alt="">
 					</div>				
 					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio graphic">
 					<img class="img-responsive" src="img/catalogo/dormitorio/dormitorio1.png" alt="">
 					</div>				
 					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio graphic">
 					<img class="img-responsive" src="img/catalogo/dormitorio/dormitorio2.png" alt="">
 					</div>				
 					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio graphic">
 					<img class="img-responsive" src="img/catalogo/dormitorio/dormitorio3.png" alt="">
 					</div>				
 					</div>	
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio oficina">
 					<img class="img-responsive" src="img/catalogo/oficina/oficina1.jpg" alt="">
-					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					</div>
+					</div>
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio oficina">
 					<img class="img-responsive" src="img/catalogo/oficina/oficina3.jpg" alt="">
-					</div>				
-					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					</div>
+					</div>
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio photography">
 					<img class="img-responsive" src="img/catalogo/jardin/jardin1.png" alt="">
-					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					</div>
+					</div>
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio oficina">
 					<img class="img-responsive" src="img/catalogo/oficina/oficina2.jpg" alt="">
+					</div>
 					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala7.png" alt="">
 					</div>				
 					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio photography">
 					<img class="img-responsive" src="img/catalogo/jardin/jardin2.png" alt="">
 					</div>				
 					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala5.png" alt="">
 					</div>				
 					</div>
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio motion-video">
 					<img class="img-responsive" src="img/catalogo/cocina/cocina1.jpg" alt="">
 					</div>				
 					</div>	
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio motion-video">
 					<img class="img-responsive" src="img/catalogo/cocina/cocina2.jpg" alt="">
 					</div>				
 					</div>						
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+					<div class="col-sm-6  col-lg-12 col-md-12 col-xs12 ">
 					<div class="single-portfolio web-design">
 					<img class="img-responsive" src="img/catalogo/sala/sala8.png" alt="">
 					</div>				
@@ -341,15 +331,15 @@
 					<div class="hover_effect_btn" id="hover_effect_btn">
 						<a href="#hover_effect_btn" data-hover="view more post"><span>ver más post</span></a>
 					</div>
-				</div>	
-			</div>			
+				</div>
+			</div>
 		</div>
 </section>
 <!-- catalogo Section -->
 
 <!-- Equipo Section -->
 <section id="tm_sec">
-	<div class="container">
+	<div class="l-container">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="title_sec">
@@ -478,7 +468,7 @@
 					<img src="img/blog1.jpg" alt=""/>
 					<h2>How to fix your bug</h2>
 					<p>Nullam metus arcu, pharetra eu tempor vel, consectetur nec metus. Praesent malesuada, purus et euismod rutrum, augue nisi facilisis diam, vitae auctor nisl libero nec eros. Vivamus vitae pulvinar augue. Nulla facilisi. Quisque rutrum ante interdum</p>
-					<a href="blog.html">Leer más <i class="fa fa-long-arrow-right"></i></a>					
+					<a href="blog.html" class="alinear-vertical--leer-mas">Leer más <i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			</div>			
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -486,7 +476,7 @@
 					<img src="img/blog2.jpg" alt=""/>
 					<h2>Pellentesque nibh libero</h2>
 					<p>Nullam metus arcu, pharetra eu tempor vel, consectetur nec metus. Praesent malesuada, purus et euismod rutrum, augue nisi facilisis diam, vitae auctor nisl libero nec eros. Vivamus vitae pulvinar augue. Nulla facilisi. Quisque rutrum ante interdum</p>
-					<a href="blog.html">Leer más <i class="fa fa-long-arrow-right"></i></a>					
+					<a href="blog.html" class="alinear-vertical--leer-mas">Leer más <i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			</div>		
 			<div class="col-lg-4 col-md-4 col-sm-12">
@@ -494,12 +484,12 @@
 					<img src="img/blog3.jpg" alt=""/>
 					<h2>pharetra eu tempor vel</h2>
 					<p>Nullam metus arcu, pharetra eu tempor vel, consectetur nec metus. Praesent malesuada, purus et euismod rutrum, augue nisi facilisis diam, vitae auctor nisl libero nec eros. Vivamus vitae pulvinar augue. Nulla facilisi. Quisque rutrum ante interdum</p>
-					<a href="blog.html">Leer más <i class="fa fa-long-arrow-right"></i></a>					
+					<a href="blog.html" class="alinear-vertical--leer-mas">Leer más <i class="fa fa-long-arrow-right"></i></a>
 				</div>
 			</div>
 			<div class="post_btn">
 				<div class="hover_effect_btn" id="hover_effect_btn">
-					<a href="#hover_effect_btn" data-hover="view more post"><span>ver más post</span></a>
+					<a href="#hover_effect_btn" data-hover="view more post" ><span class="boton-mas-espacio">ver más post</span></a>
 				</div>
 			</div>			
 
