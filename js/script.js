@@ -1,8 +1,7 @@
-$(function () {
-    var toggleMenu = $('#toggle-menu');
-    var nav = $('#main-nav');
+$(".submenu").click(function(){
+    $(this).children("ul").slideToggle();
+})
 
-    toggleMenu.on('click', function () {
-        nav.add($('body')).toggleClass('mostrar');
-    });
-});
+$("ul").click(function(ev){
+    ev.stopPropagation();
+})
