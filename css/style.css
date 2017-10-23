@@ -1555,16 +1555,33 @@ header label {
 .img__user--container
 {
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 5%;
 }
 .img__user--container
 {
-    width: 24%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
+.img--details
+{
+   padding-top: .5em;
+   padding-left: 1.5em;
+}
+.img--details :first-child
+{
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.img--details :last-child
+{
+    color: #00726B;
+    font-size: 1.5em;
+}
+
 
 .img--editar{
     position: absolute;
